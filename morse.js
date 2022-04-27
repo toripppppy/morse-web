@@ -120,8 +120,6 @@ function toMorse(mn) { //mnを表示用に変換
 function rangeSet() {
     let range = rangeInput.value;
     if (range != "") {
-        console.log(range.slice(0, 1));
-        console.log(range.slice(-1));
         lang = lang.slice( lang.indexOf(range.slice(0, 1)), lang.indexOf(range.slice(-1)) + 1 );
         console.log(lang);
     }
@@ -158,7 +156,7 @@ async function start() {
             clearInterval(timerId);
             sokomade();
         }
-    }, 100);
+    }, 1000);
 }
 
 function sokomade() {
