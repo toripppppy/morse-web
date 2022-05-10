@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#main {
+    box-sizing: border-box; /*スクロールバーを要素の幅内に収める*/
+    margin-left: 180px;
+    padding: 30px 40px;
+}
+
+#side {
+    box-sizing: border-box;
+    top: 0px;
+    height: 200%;
+    width: 200px;
+    position: fixed; /*サイドバーを画面に固定*/
+    background-color:#20386a;
+    padding: 0px;
+    margin: 7px;
+    text-align: center;
+}
+
+#header {
+    padding: 0px 25px;
+    margin-left: 10px;
+    border-left: 4px solid #c8c8c8;
+}
+
+#start-header {
+    font-size: 400%;
+    font-weight: 200;
+    color: #c8c8c8;
+    padding-top: 250px;
+    margin:0px;
+    text-align: center;
+}
+
+#screen {
+    background-color: #001032;
+    width:1000px;
+    height:650px;
+    text-align:center;
+    font-weight: bold;
+}
+
+#score {
+    height: 30px;
+    font-size: 150%;
+    padding: 15px 20px;
+    border-bottom: 4px solid #c8c8c8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#time-area {
+    width: 10px;
+    margin:0 auto 0 0;
+}
+
+#score-area {
+    margin:0 0 auto 0;
+}
+
+#question-area {
+    font-size: 400%;
+    padding-top: 70px;
+}
+
+#answer-area {
+    font-size: 500%;
+    margin: 200px auto 0px;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+
+h3 {
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #c8c8c8;
+}
+
+.button {
+    margin: 6px;
+    width: 185px;
+    height: 50px;
+    background-color: #337ab7;
+    border-style: none;
+    color: #fdffff;
+}
+
+#retry-button {
+    margin-top: 70px;
+}
