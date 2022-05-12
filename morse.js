@@ -3,6 +3,8 @@ const langButton = document.getElementById('lang-button')
 const timeButton = document.getElementById('time-button')
 const rangeButton = document.getElementById('range-button')
 const helpButton = document.getElementById('help-button')
+const translater = document.getElementById('translate')
+const morsetable = document.getElementById('morsetable')
 const timeArea = document.createElement('p');
 const scoreArea = document.createElement('p');
 const questionArea = document.createElement('div');
@@ -59,6 +61,16 @@ rangeButton.onclick = () => {
 
 helpButton.onclick = () => {
     location.href = 'helptxt.html'
+}
+
+translater.onclick = () => {
+    location.href = 'morse-translater/morse-translater.html'
+}
+
+morsetable.onclick = () => {
+    if (window.confirm('外部サイトに飛びます。多分一番覚えやすい。')) {
+        location.href = 'http://www7.plala.or.jp/ax_ono/ham/cw/wabun.htm'
+    }
 }
 
 //キーを押したときの処理 m,n:mn入力 左矢印:スキップ 右矢印:正誤判定
