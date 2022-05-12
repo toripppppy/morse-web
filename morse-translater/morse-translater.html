@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="morse-translater.css">
+    <title>morse-translater</title>
+</head>
+<body>
+    <h1>もーるすほんやくましーん</h1>
+    <textarea type="text" placeholder="ひらがなで入力" id="textinput"></textarea>
+    <button onclick="toMorse(document.getElementById('textinput').value)">変換</button>
+    <div id="result-area">
+    </div>
+    <a href="morse/morse.html">もどる</a>
+    <script src="morse-translater.js"></script>
+</body>
+</html>
